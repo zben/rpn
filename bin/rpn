@@ -1,0 +1,11 @@
+#!/usr/bin/ruby
+
+require_relative '../lib/rpn'
+
+calculator = Rpn.new
+
+while true
+  puts 'Enter space separated inputs:'
+  calculator.process(gets)
+  puts calculator
+end
